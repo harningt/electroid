@@ -1,0 +1,1801 @@
+<html xmlns:ganttproject="http://ganttproject.sf.net/">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GanttProject - ElectroidPlanning</title>
+<style>
+	    A:link {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black;
+	    }
+	    A:visited {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black; BACKGROUND: none
+	    }
+	    A:hover {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: white ; BACKGROUND: #6d9ec6;
+	    }
+	    .notes {
+	      padding-left: 10px;
+	    }
+	    .notes pre {
+	      font-family: Arial, Helvetica;
+	      font-size: 10px;
+	      margin-top: 0px;
+	      padding-top: 0px;
+	      margin-bottom: 5px;
+	    }
+	    .attachment {
+	      padding-left: 10px;
+	    }
+	    .attachment a:link {
+	      font-weight: normal;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:hover {
+	      font-weight: normal;
+	      text-decoration: underline;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:visited {
+	      font-weight: normal;
+	      font-size: 12px;
+	      background: white;
+	      color: gray;
+	    }
+	    TD {
+		FONT-SIZE: 12px; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    UL {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    LI {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    H1 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #6d9ec6;
+	    }
+	    H2 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #000000;
+	    }
+	    H3 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #6d9ec6;
+	    }
+	    H4 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000;
+	    }
+	    H5 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #6d9ec6;
+	    }
+	    H6 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000
+	    }
+
+	    </style>
+</head>
+<body bgcolor="white">
+<center>
+<style>
+div.project_name {
+  font-size: 150%;
+  color: black;
+  font-weight: bold;
+  border-top: solid #6d9ec6 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+div.page_links {
+  background: #6d9ec6;
+  text-align: center;
+}
+</style>
+<center>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#dddddd">
+<div class="project_name">Electroid Gantt Project</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="page_links">
+<a href="ElectroidPlanning.html"></a>  |
+          <a href="ElectroidPlanning-chart.html">Gantt</a> |
+          <a href="ElectroidPlanning-tasks.html">Tasks</a> |
+          <a href="ElectroidPlanning-resources.html">Resources</a>
+</div>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<style>
+td.header {
+  background: #dddddd;
+  margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+  border-bottom: solid black 2px;
+}
+td.cell {
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+}
+div.cell {
+}
+h5.header {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+</style>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" class="header">
+<h5 class="header">Name</h5>
+</td><td valign="top" class="header">
+<h5 class="header">Begin date</h5>
+</td><td valign="top" class="header">
+<h5 class="header">End date</h5>
+</td><td valign="top" class="header">
+<h5 class="header">Completion</h5>
+</td><td valign="top" class="header">
+<h5 class="header">Resources</h5>
+</td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Planning Complete</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/11/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Planning</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/2/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">UI Design Complete</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/18/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">UI Design</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/21/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">61</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Main Screen</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Transaction List</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Transaction Information</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Label Edit</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Wallet Selection</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Send Coin</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Address list</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Address book</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Data Import/Export</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Receive Dialog</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">QR Scan</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Seed Input</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Public/Private Address Import</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Seed Generate Display</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/6/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Configuration Screens</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Server Selection</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Label Sync Configure</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Proxy Configure</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Remote Backup Configure</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/16/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Notification Preferences</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">100</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Refine UI</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/18/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/21/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">System Design Complete</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/24/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">System Design</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Design ElectrumJ</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Address Sequence Interface</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Data Collection Layer</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Notification API</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Wallet Backup System</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Determine overall architecture</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Discover required 3rd party libraries</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/20/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Design Service</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/21/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Communication API</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/21/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Design Client UI</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Design Client&lt;-&gt;Server Behavior</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/19/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Backend Library Base Implementated</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/1/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/31/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Alpha</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Beta</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">10/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">10/9/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Release Candidate</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">11/17/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">11/16/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Implement ElectrumJ</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/20/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Create Project</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/20/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/20/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Wallet</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/28/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Implement Generic Wallet System</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Implement Static/Random Wallet</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/22/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Implement Electrum Sequence Generation</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Implement BIP32 Sequence Generation</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/28/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/28/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Data Collector / Processor</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">2</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Electrum RPC</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Transaction decoder</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Transaction encoder</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">16</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Data Processor Stage 2</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/1/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">SPV</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/1/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/5/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Import/Export Tools</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Label Sync</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Litecoin</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/12/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Address generation variants</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Data Collector Variant</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/11/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/11/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Fee calculation details</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/12/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/12/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Litecoin Stage 2</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">SPV</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/23/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0em">
+<div style="margin: 0; padding: 0;">Implement Electroid</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/18/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Create Project</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Minimal Main Screen</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/25/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Transaction List</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/26/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">8/27/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Text Import Dialog - Electrum</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/1/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/1/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Receive Dialog</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Transaction Details</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Address List</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Send Dialog</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/9/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/9/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Label Edit / Display</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/10/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Address Book</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/11/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/11/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Text Export Dialog</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/13/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/13/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">BIP 0032 Sequence Handling</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/14/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Text Import Dialog BIP 0032</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/16/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/16/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Configuration Panels</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Server Selection</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/3/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Proxy Configuration</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/4/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Label Sync Configuration</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/8/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Remote Backup Interface</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:1em">
+<div style="margin: 0; padding: 0;">Notification Page</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Notifications</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/15/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Address / Transaction Detail Click-through</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/18/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/18/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+<tr>
+<td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">Litecoin UI Changes</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/13/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">9/16/13</div>
+</div>
+</td><td valign="top" class="cell">
+<div style="margin:0; padding:0; padding-left:0.5em">
+<div style="margin: 0; padding: 0;">0</div>
+</div>
+</td><td valign="top" class="cell"></td>
+</tr>
+</table>
+</center>
+<br>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td bgcolor="#6d9ec6" width="50%"><font color="#FFFFFF"><b>Ganttproject (2.0.10)</b></font></td><td bgcolor="#6d9ec6" width="50%" align="right"><b><a href="http://ganttproject.biz">ganttproject.biz</a></b>
+<br>
+<b>8/22/13 - 9:58:11 AM</b></td>
+</tr>
+</table>
+</body>
+</html>
